@@ -1,0 +1,87 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <!-- Bar -->
+  <div class="bar">
+    <div class="container">Thanh toán an toàn – Hoàn tất đơn hàng của bạn</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/html/home.html"><div class="logo">G</div>GreenNest</a>
+      <div class="nav-right">
+        <a class="icon-btn" href="/html/cart.html">←</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title -->
+  <section class="container" style="margin:32px 0 10px;">
+    <h1 style="font-size:30px; margin-bottom:6px;">Thanh toán</h1>
+  </section>
+
+  <!-- Checkout Layout -->
+  <section class="container checkout-wrapper">
+
+    <!-- Left: Form -->
+    <div class="checkout-card">
+      <h3>Thông tin giao hàng</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Họ và tên *</label>
+          <input type="text" placeholder="Nguyễn Văn A">
+        </div>
+        <div class="form-group">
+          <label>Số điện thoại *</label>
+          <input type="tel" placeholder="0123 456 789">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" placeholder="email@example.com">
+      </div>
+      <div class="form-group">
+        <label>Địa chỉ *</label>
+        <input type="text" placeholder="123 Đường ABC, Quận 1, TP.HCM">
+      </div>
+      <div class="form-group">
+        <label>Ghi chú (tuỳ chọn)</label>
+        <textarea rows="3" placeholder="Ví dụ: giao giờ hành chính..."></textarea>
+      </div>
+
+      <h3>Phương thức thanh toán</h3>
+      <label class="payment-option">
+        <input type="radio" name="payment" checked>  Thanh toán khi nhận hàng (COD)
+      </label>
+      <label class="payment-option">
+        <input type="radio" name="payment">  Thẻ ngân hàng / Visa / MasterCard
+      </label>
+      <label class="payment-option">
+        <input type="radio" name="payment">  Ví điện tử (Momo, ZaloPay)
+      </label>
+      <label class="payment-option">
+        <input type="radio" name="payment">  Chuyển khoản ngân hàng
+      </label>
+    </div>
+
+    <!-- Right: Summary -->
+    <div class="checkout-card order-summary">
+      <h3>Đơn hàng</h3>
+      <div class="summary-row"><span>Cam hữu cơ (x2)</span><span>130.000đ</span></div>
+      <div class="summary-row"><span>Cà rốt (x1)</span><span>29.000đ</span></div>
+      <hr style="border:none; border-top:1px solid var(--gray); margin:14px 0;">
+      <div class="summary-row"><span>Tạm tính</span><span>159.000đ</span></div>
+      <div class="summary-row"><span>Phí vận chuyển</span><span>Miễn phí</span></div>
+      <div class="summary-row"><strong>Tổng cộng</strong><strong>159.000đ</strong></div>
+      <a href="success.html" class="btn btn-primary btn-checkout">Đặt hàng</a>
+    </div>
+
+  </section>
+
+{% endblock %}
+
+

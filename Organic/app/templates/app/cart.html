@@ -1,0 +1,70 @@
+{% extends "app/base.html" %}
+
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <!-- Title -->
+  <section class="container" style="margin:28px 0;">
+    <h1 style="font-size:32px; margin-bottom:8px;">Giỏ hàng</h1>
+  </section>
+
+  <!-- Cart Table -->
+  <section class="container">
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tạm tính</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="display:flex; align-items:center; gap:12px;">
+            <img src="#" class="cart-thumb" alt="Cam hữu cơ">
+            Cam sành hữu cơ 1kg
+          </td>
+          <td>65.000đ</td>
+          <td>
+            <div class="qty-control">
+              <button>-</button><span>2</span><button>+</button>
+            </div>
+          </td>
+          <td>130.000đ</td>
+          <td><a href="#">✕</a></td>
+        </tr>
+        <tr>
+          <td style="display:flex; align-items:center; gap:12px;">
+            <img src="#" class="cart-thumb" alt="Cà rốt">
+            Cà rốt Đà Lạt 500g
+          </td>
+          <td>29.000đ</td>
+          <td>
+            <div class="qty-control">
+              <button>-</button><span>1</span><button>+</button>
+            </div>
+          </td>
+          <td>29.000đ</td>
+          <td><a href="#">✕</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Summary -->
+  <section class="container">
+    <div class="cart-summary">
+      <h3>Tổng đơn hàng</h3>
+      <div class="summary-row"><span>Tạm tính:</span><span>159.000đ</span></div>
+      <div class="summary-row"><span>Phí vận chuyển:</span><span>Miễn phí</span></div>
+      <div class="summary-row"><strong>Tổng cộng:</strong><strong>159.000đ</strong></div>
+      <a href="#" class="btn btn-primary" style="margin-top:16px; display:block; text-align:center;">Thanh toán</a>
+    </div>
+  </section>
+  
+
+
+{% endblock %}

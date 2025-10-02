@@ -1,0 +1,48 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <div class="bar"><div class="container"> Chi tiết đơn hàng</div></div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html"><div class="logo">G</div>GreenNest</a>
+    </div>
+  </header>
+
+  <section class="container order-wrapper">
+    <!-- Left -->
+    <div class="order-card">
+      <h2>Đơn hàng #1001</h2>
+      <div class="order-status">
+        <p><strong>Ngày đặt:</strong> 01/10/2025</p>
+        <p><strong>Trạng thái:</strong> Đang vận chuyển</p>
+        <div class="progress">
+          <div class="progress-step done"><div class="circle"></div><p>Đã đặt</p></div>
+          <div class="progress-step done"><div class="circle"></div><p>Đang xử lý</p></div>
+          <div class="progress-step done"><div class="circle"></div><p>Đang vận chuyển</p></div>
+          <div class="progress-step"><div class="circle"></div><p>Hoàn tất</p></div>
+        </div>
+      </div>
+      <table class="order-table">
+        <thead><tr><th>Sản phẩm</th><th>SL</th><th>Giá</th><th>Tổng</th></tr></thead>
+        <tbody>
+          <tr><td>Cam hữu cơ 1kg</td><td>2</td><td>65.000đ</td><td>130.000đ</td></tr>
+          <tr><td>Cà rốt 500g</td><td>1</td><td>29.000đ</td><td>29.000đ</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Right -->
+    <div class="order-card">
+      <h2>Tóm tắt</h2>
+      <div class="summary-row"><span>Tạm tính</span><span>159.000đ</span></div>
+      <div class="summary-row"><span>Phí ship</span><span>Miễn phí</span></div>
+      <div class="summary-row"><strong>Tổng cộng</strong><strong>159.000đ</strong></div>
+      
+    </div>
+  </section>
+
+{% endblock %}

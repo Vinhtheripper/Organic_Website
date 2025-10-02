@@ -1,0 +1,83 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <!-- Bar -->
+  <div class="bar">
+    <div class="container"> Tài khoản của tôi</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/html/home.html"><div class="logo">G</div>GreenNest</a>
+      <div class="nav-right">
+        <div class="search"><input placeholder="Tìm sản phẩm..."></div>
+        <a class="icon-btn" href="/html/cart.html">🛒</a>
+        <div class="profile">
+          <img src="" alt="Avatar" class="avatar">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Account Layout -->
+  <section class="container account-wrapper">
+    <!-- Sidebar -->
+    <aside class="account-sidebar">
+      <h3>Menu</h3>
+      <a href="#" class="active">Thông tin cá nhân</a>
+      <a href="#">Đơn hàng của tôi</a>
+      <a href="#">Địa chỉ</a>
+      <a href="#">Đổi mật khẩu</a>
+      <a href="logout.html">Đăng xuất</a>
+    </aside>
+
+    <!-- Content -->
+    <div class="account-content">
+      <!-- Profile Info -->
+      <div class="account-section account-info">
+        <h2>Thông tin cá nhân</h2>
+        <p><strong>Họ tên:</strong> Nguyễn Văn A</p>
+        <p><strong>Email:</strong> nguyenvana@example.com</p>
+        <p><strong>Số điện thoại:</strong> 0900 123 456</p>
+        <a href="#" class="btn btn-primary" style="margin-top:10px;">Chỉnh sửa</a>
+      </div>
+
+      <!-- Orders -->
+      <div class="account-section">
+        <h2>Đơn hàng gần đây</h2>
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th>Mã đơn</th>
+              <th>Ngày đặt</th>
+              <th>Trạng thái</th>
+              <th>Tổng tiền</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1001</td>
+              <td>01/10/2025</td>
+              <td class="status success">Hoàn tất</td>
+              <td>159.000đ</td>
+              <td><a href="order-detail.html">Xem</a></td>
+            </tr>
+            <tr>
+              <td>#1002</td>
+              <td>25/09/2025</td>
+              <td class="status pending">Đang xử lý</td>
+              <td>320.000đ</td>
+              <td><a href="order-detail.html">Xem</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

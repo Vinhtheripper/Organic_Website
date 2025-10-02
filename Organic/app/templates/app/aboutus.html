@@ -1,0 +1,38 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <!-- Content -->
+  <section class="container farm-wrapper">
+    <!-- Map -->
+    <div class="farm-map">
+      <img src="#" alt="Bản đồ nông trại">
+      <!-- markers -->
+      <div class="marker" style="top:30%; left:40%;" data-farm="dalat">🌱</div>
+      <div class="marker" style="top:60%; left:70%;" data-farm="longan">🍊</div>
+      <div class="marker" style="top:50%; left:20%;" data-farm="lamdong">🥬</div>
+    </div>
+
+    <!-- Info -->
+    <div class="farm-info" id="farmInfo">
+      <img src="#" class="farm-photo" alt="Farm">
+      <div class="farm-body">
+        <span class="badge">VietGAP, USDA Organic</span>
+        <h2>Nông trại Đà Lạt</h2>
+        <p>Nông trại hữu cơ nằm trên cao nguyên Lâm Viên, khí hậu mát mẻ quanh năm.
+           Chuyên cung cấp rau củ quả chuẩn hữu cơ USDA và VietGAP. Sản phẩm nổi bật:
+           xà lách, cà chua bi, dâu tây.</p>
+        <a href="#" class="btn btn-primary">Xem chi tiết nông trại</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+ 
+  <script src="{% static 'js/aboutus.js' %}"></script>
+  
+
+{% endblock %}

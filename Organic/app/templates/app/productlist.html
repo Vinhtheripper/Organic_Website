@@ -1,0 +1,129 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  
+  <div class="bar">
+    <div class="container"> Fresh Market • 100% Organic </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/html/home.html"><div class="logo">G</div>GreenNest</a>
+      <div class="nav-right">
+        <div class="search"><input placeholder="Tìm sản phẩm..."></div>
+        <a class="icon-btn" href="#">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page title -->
+  <section class="container" style="margin:28px 0;">
+    <h1 style="font-size:32px; margin-bottom:10px;">Danh sách sản phẩm</h1>
+    <p class="subtle">Tất cả thực phẩm hữu cơ tươi sạch, chọn lọc từ nông trại.</p>
+  </section>
+
+  <!-- Filter & Sort -->
+  <section class="container" style="margin-bottom:18px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+    <div class="chips">
+      <span class="chip">🥬 Rau củ</span>
+      <span class="chip">🍎 Trái cây</span>
+      <span class="chip">🌾 Ngũ cốc</span>
+      <span class="chip">🥛 Sữa</span>
+      <span class="chip">🍯 Gia vị</span>
+    </div>
+    <div>
+      <label for="sort" class="subtle">Sắp xếp:</label>
+      <select id="sort" style="padding:8px 12px; border-radius:999px; border:1px solid var(--gray);">
+        <option>Mới nhất</option>
+        <option>Giá tăng dần</option>
+        <option>Giá giảm dần</option>
+        <option>Bán chạy</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="container">
+    <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true"></div></div>
+          <div class="content">
+            <div class="pill org">• Chứng nhận hữu cơ</div>
+            <h3 style="margin:8px 0 6px">Táo Fuji hữu cơ 1kg</h3>
+            <p class="subtle">Ngọt giòn, đóng gói hút khí tươi lâu.</p>
+            <div class="price">
+              <strong>89.000đ</strong>
+              <div class="add">
+                <div class="qty"><button aria-label="Trừ">−</button><span>1</span><button aria-label="Cộng">+</button></div>
+                <button class="btn-primary" style="padding:8px 12px">Thêm</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true" style="background: radial-gradient(circle at 30% 30%, #fff, #ffe7c8)"></div></div>
+          <div class="content">
+            <div class="pill org" style="background:#eef7e8; color:#2d5b1a; border:1px solid #d8eac9">• Tươi mỗi sáng</div>
+            <h3 style="margin:8px 0 6px">Cà rốt Đà Lạt 500g</h3>
+            <p class="subtle">Giòn ngọt, giàu beta‑carotene.</p>
+            <div class="price">
+              <strong>29.000đ</strong>
+              <div class="add">
+                <div class="qty"><button aria-label="Trừ">−</button><span>1</span><button aria-label="Cộng">+</button></div>
+                <button class="btn-primary" style="padding:8px 12px">Thêm</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true" style="background: radial-gradient(circle at 30% 30%, #fff, #e6ddd8)"></div></div>
+          <div class="content">
+            <div class="pill org" style="background:#fff3d9; color:#7a4200; border:1px solid #ffd390">• Best‑seller</div>
+            <h3 style="margin:8px 0 6px">Yến mạch cán mỏng 1kg</h3>
+            <p class="subtle">Nguồn năng lượng sạch cho bữa sáng.</p>
+            <div class="price">
+              <strong>95.000đ</strong>
+              <div class="add">
+                <div class="qty"><button aria-label="Trừ">−</button><span>1</span><button aria-label="Cộng">+</button></div>
+                <button class="btn-primary" style="padding:8px 12px">Thêm</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true" style="background: radial-gradient(circle at 30% 30%, #fff, #d8eac9)"></div></div>
+          <div class="content">
+            <div class="pill org" style="background:#eef7e8; color:#2d5b1a; border:1px solid #d8eac9">• Không thuốc trừ sâu</div>
+            <h3 style="margin:8px 0 6px">Xà lách Romaine 300g</h3>
+            <p class="subtle">Lá giòn, hợp salad & bánh mì.</p>
+            <div class="price">
+              <strong>25.000đ</strong>
+              <div class="add">
+                <div class="qty"><button aria-label="Trừ">−</button><span>1</span><button aria-label="Cộng">+</button></div>
+                <button class="btn-primary" style="padding:8px 12px">Thêm</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+  </section>
+
+  <div class="pagination">
+    <a href="#">←</a>
+    <a href="#" class="active">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">→</a>
+  </div>
+
+  
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block title %}GreenNest – Organic Market{% endblock %}
+
+{% block content %}
+
+  <!-- Bar -->
+  <div class="bar">
+    <div class="container">Xem chi tiết sản phẩm</div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="/html/home.html"><div class="logo">G</div>GreenNest</a>
+      <div class="nav-right">
+        <div class="search"><input placeholder="Tìm sản phẩm hữu cơ..."></div>
+        <a class="icon-btn" href="/html/cart.html">🛒</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail -->
+  <section class="container detail-wrapper">
+    <div class="detail-img">
+      <img src="#" alt="Táo Fuji hữu cơ">
+    </div>
+    <div class="detail-info">
+      <h1>Táo Fuji hữu cơ 1kg</h1>
+      <div class="price">89.000đ</div>
+      <p>Táo Fuji được trồng theo tiêu chuẩn hữu cơ, không hóa chất, ngọt giòn tự nhiên.
+         Đóng gói hút khí giúp bảo quản lâu và giữ nguyên hương vị.</p>
+      <div class="qty-control">
+        <button>-</button><span>1</span><button>+</button>
+      </div>
+      <a href="cart.html" class="btn btn-primary">🛒 Thêm vào giỏ</a>
+    </div>
+  </section>
+
+  <!-- Related Products -->
+  <section class="container related">
+    <h2>Sản phẩm liên quan</h2>
+    <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true"></div></div>
+          <div class="content">
+            <div class="pill org">• Chứng nhận hữu cơ</div>
+            <h3 style="margin:8px 0 6px">Táo Fuji hữu cơ 1kg</h3>
+            <p class="subtle">Ngọt giòn, đóng gói hút khí tươi lâu.</p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="thumb"><div class="seed" aria-hidden="true" style="background: radial-gradient(circle at 30% 30%, #fff, #ffe7c8)"></div></div>
+          <div class="content">
+            <div class="pill org" style="background:#eef7e8; color:#2d5b1a; border:1px solid #d8eac9">• Tươi mỗi sáng</div>
+            <h3 style="margin:8px 0 6px">Cà rốt Đà Lạt 500g</h3>
+            <p class="subtle">Giòn ngọt, giàu beta‑carotene.</p>
+          </div>
+        </article>
+  </section>
+
+{% endblock %}
