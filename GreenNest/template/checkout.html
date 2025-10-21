@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - GreenNest Organic Store</title>
+    <link rel="stylesheet" href="../static/css/HomePage.css">
+    <link rel="stylesheet" href="../static/css/neo-brutalism-global.css">
+    <link rel="stylesheet" href="../static/css/checkout.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="HomePage.html" class="logo">
+                <div class="logo-icon">🌿</div>
+                <span class="logo-text">Green<span>Nest</span></span>
+            </a>
+
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="HomePage.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="Product_list.html" class="nav-link">
+                            Products <i class="lni lni-chevron-down"></i>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-column">
+                                    <h4>🥬 Fresh Produce</h4>
+                                    <ul>
+                                        <li><a href="#">Organic Vegetables</a></li>
+                                        <li><a href="#">Fresh Fruits</a></li>
+                                        <li><a href="#">Salad Greens</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>🥛 Dairy & Eggs</h4>
+                                    <ul>
+                                        <li><a href="#">Organic Milk</a></li>
+                                        <li><a href="#">Cheese Selection</a></li>
+                                        <li><a href="#">Fresh Yogurt</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>🍞 Bakery & Grains</h4>
+                                    <ul>
+                                        <li><a href="#">Artisan Bread</a></li>
+                                        <li><a href="#">Organic Rice</a></li>
+                                        <li><a href="#">Pasta & Noodles</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link promotion">🔥 Promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Our Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-tools">
+                <div class="header-search">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="lni lni-search-alt"></i>
+                        </button>
+                    </form>
+                </div>
+                <a href="#" class="icon-btn"><i class="lni lni-heart"></i><span class="badge">3</span></a>
+                <div class="cart-wrapper">
+                    <a href="cart.html" class="icon-btn"><i class="lni lni-cart"></i><span class="badge">3</span></a>
+                </div>
+                <a href="#" class="icon-btn"><i class="lni lni-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CHECKOUT HERO -->
+    <section class="checkout-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge-organic">🔒 Secure Checkout</div>
+                <h1 class="hero-title">Complete Your Order</h1>
+                <p class="hero-subtitle">Just a few more steps to get your fresh organic products!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT MAIN SECTION -->
+    <section class="checkout-main-section">
+        <div class="container">
+            <div class="checkout-grid">
+                <!-- LEFT: CHECKOUT FORM -->
+                <div class="checkout-form-wrapper">
+                    <!-- Contact Section -->
+                    <div class="checkout-section">
+                        <div class="section-header-row">
+                            <h2 class="section-title">
+                                <span class="section-number">1</span>
+                                Contact Information
+                            </h2>
+                            <a href="#" class="login-link">Already have an account? <strong>Log in</strong></a>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" 
+                                   id="email" 
+                                   class="form-input" 
+                                   placeholder="your.email@example.com"
+                                   required>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                <span>Email me with news and exclusive offers</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Section -->
+                    <div class="checkout-section">
+                        <h2 class="section-title">
+                            <span class="section-number">2</span>
+                            Delivery Address
+                        </h2>
+
+                        <!-- PO Box Warning -->
+                        <div class="info-box warning-box" id="po-box-warning" style="display: none;">
+                            <i class="lni lni-warning"></i>
+                            <span>PO Boxes are not eligible for delivery</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">First Name</label>
+                                <input type="text" 
+                                       id="first-name" 
+                                       class="form-input" 
+                                       placeholder="John"
+                                       required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Last Name</label>
+                                <input type="text" 
+                                       id="last-name" 
+                                       class="form-input" 
+                                       placeholder="Doe"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Company (Optional)</label>
+                            <input type="text" 
+                                   class="form-input" 
+                                   placeholder="Company name">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Address</label>
+                            <input type="text" 
+                                   id="address-input" 
+                                   class="form-input" 
+                                   placeholder="123 Green Street"
+                                   required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Apartment, suite, etc. (Optional)</label>
+                            <input type="text" 
+                                   class="form-input" 
+                                   placeholder="Apt 4B">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">City / Province</label>
+                                <select id="city-province" class="form-input form-select" required>
+                                    <option value="" disabled selected>Select Province</option>
+                                    <option value="An Giang">An Giang</option>
+                                    <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                                    <option value="Bắc Giang">Bắc Giang</option>
+                                    <option value="Bắc Kạn">Bắc Kạn</option>
+                                    <option value="Bạc Liêu">Bạc Liêu</option>
+                                    <option value="Bắc Ninh">Bắc Ninh</option>
+                                    <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                    <option value="Đà Nẵng">Đà Nẵng</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">ZIP Code</label>
+                                <input type="text" 
+                                       id="zip-code" 
+                                       class="form-input" 
+                                       placeholder="700000"
+                                       required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" 
+                                   id="phone" 
+                                   class="form-input" 
+                                   placeholder="+84 xxx xxx xxx"
+                                   required>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                <span>Text me with VIP updates and offers</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Method Section -->
+                    <div class="checkout-section">
+                        <h2 class="section-title">
+                            <span class="section-number">3</span>
+                            Shipping Method
+                        </h2>
+
+                        <h3 class="subsection-title">First Shipment</h3>
+                        <div class="shipping-options">
+                            <label class="shipping-option">
+                                <input type="radio" name="shipping" value="fastest" checked>
+                                <span class="radio-custom"></span>
+                                <div class="shipping-details">
+                                    <div class="shipping-name">
+                                        <i class="lni lni-rocket"></i>
+                                        Fastest Delivery
+                                    </div>
+                                    <div class="shipping-date">Arrives Monday, Oct 27</div>
+                                </div>
+                                <div class="shipping-price">$11.99</div>
+                            </label>
+
+                            <label class="shipping-option">
+                                <input type="radio" name="shipping" value="later">
+                                <span class="radio-custom"></span>
+                                <div class="shipping-details">
+                                    <div class="shipping-name">
+                                        <i class="lni lni-calendar"></i>
+                                        Plan Ahead
+                                    </div>
+                                    <div class="shipping-date">Arrives Monday, Nov 3</div>
+                                </div>
+                                <div class="shipping-price">$11.99</div>
+                            </label>
+                        </div>
+
+                        <h3 class="subsection-title">Recurring Shipments</h3>
+                        <div class="info-box recurring-info">
+                            <i class="lni lni-reload"></i>
+                            <span>Arrives every Monday • $11.99/week (skip or cancel anytime!)</span>
+                        </div>
+                    </div>
+
+                    <!-- Payment Section -->
+                    <div class="checkout-section">
+                        <h2 class="section-title">
+                            <span class="section-number">4</span>
+                            Payment Information
+                        </h2>
+
+                        <div class="payment-method-box">
+                            <div class="payment-header">
+                                <div class="payment-label">
+                                    <i class="lni lni-credit-cards"></i>
+                                    Credit Card
+                                </div>
+                                <div class="card-icons">
+                                    <span class="card-icon">VISA</span>
+                                    <span class="card-icon">MC</span>
+                                    <span class="card-icon">AMEX</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Card Number</label>
+                                <div class="input-with-icon">
+                                    <input type="text" 
+                                           class="form-input" 
+                                           placeholder="1234 5678 9012 3456"
+                                           maxlength="19">
+                                    <i class="lni lni-lock input-icon"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Cardholder Name</label>
+                                <input type="text" 
+                                       class="form-input" 
+                                       placeholder="John Doe">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Expiry Date</label>
+                                    <input type="text" 
+                                           class="form-input" 
+                                           placeholder="MM / YY"
+                                           maxlength="7">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">CVV</label>
+                                    <div class="input-with-icon">
+                                        <input type="text" 
+                                               class="form-input" 
+                                               placeholder="123"
+                                               maxlength="4">
+                                        <i class="lni lni-question-circle input-icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button class="btn btn-primary btn-checkout" onclick="validateAndPay()">
+                        <span>Complete Order</span>
+                        <i class="lni lni-lock"></i>
+                    </button>
+
+                    <!-- Legal Text -->
+                    <div class="legal-notice">
+                        <p>By completing this order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+
+                <!-- RIGHT: ORDER SUMMARY -->
+                <div class="order-summary-sidebar">
+                    <div class="summary-card">
+                        <div class="summary-header">
+                            <h2 class="summary-title">Order Summary</h2>
+                            <span class="item-count-badge">3 items</span>
+                        </div>
+
+                        <!-- Product List -->
+                        <div class="summary-product-list">
+                            <div class="summary-product-item">
+                                <div class="product-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=80" 
+                                         alt="Southwest Salad">
+                                    <span class="quantity-badge">1</span>
+                                </div>
+                                <div class="product-info">
+                                    <h4 class="product-name">Southwest Salad</h4>
+                                    <p class="product-desc">Fresh & Spicy</p>
+                                </div>
+                                <div class="product-price">
+                                    <span class="original-price">$12.99</span>
+                                    <span class="final-price">$10.99</span>
+                                </div>
+                            </div>
+
+                            <div class="summary-product-item">
+                                <div class="product-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&q=80" 
+                                         alt="Garden Harvest">
+                                    <span class="quantity-badge">1</span>
+                                </div>
+                                <div class="product-info">
+                                    <h4 class="product-name">Garden Harvest</h4>
+                                    <p class="product-desc">Seasonal Mix</p>
+                                </div>
+                                <div class="product-price">
+                                    <span class="original-price">$12.99</span>
+                                    <span class="final-price">$10.99</span>
+                                </div>
+                            </div>
+
+                            <div class="summary-product-item">
+                                <div class="product-image-wrapper">
+                                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=200&q=80" 
+                                         alt="Italian Pasta">
+                                    <span class="quantity-badge">1</span>
+                                </div>
+                                <div class="product-info">
+                                    <h4 class="product-name">Italian Pasta Bowl</h4>
+                                    <p class="product-desc">With Smoked Salami</p>
+                                </div>
+                                <div class="product-price">
+                                    <span class="original-price">$14.99</span>
+                                    <span class="final-price">$12.88</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Discount Code -->
+                        <div class="discount-code-section">
+                            <div class="discount-input-group">
+                                <input type="text" 
+                                       class="discount-input" 
+                                       placeholder="Discount code">
+                                <button class="btn-apply">Apply</button>
+                            </div>
+                        </div>
+
+                        <!-- Summary Totals -->
+                        <div class="summary-totals">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span id="summary-subtotal">$34.86</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span id="summary-shipping">$11.99</span>
+                            </div>
+                            <div class="summary-row discount-row" style="display: none;">
+                                <span>
+                                    <i class="lni lni-tag"></i> SAVE10
+                                </span>
+                                <span class="discount-amount">-$3.49</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Total</span>
+                                <span id="summary-total">$46.85 USD</span>
+                            </div>
+                        </div>
+
+                        <!-- Trust Badges -->
+                        <div class="trust-badges">
+                            <div class="trust-badge">
+                                <i class="lni lni-lock"></i>
+                                <span>Secure Payment</span>
+                            </div>
+                            <div class="trust-badge">
+                                <i class="lni lni-delivery"></i>
+                                <span>Free Returns</span>
+                            </div>
+                            <div class="trust-badge">
+                                <i class="lni lni-certificate"></i>
+                                <span>Guaranteed Fresh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="newsletter-footer">
+        <div class="footer-container">
+            <div class="footer-links-side">
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Our Product</h4>
+                    <ul>
+                        <li><a href="#">Meal Kits</a></li>
+                        <li><a href="#">Ready To Eat</a></li>
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Help</h4>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Info</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Connect</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-content-side">
+                <h2 class="footer-title">Get to Know Us Better</h2>
+                <p class="footer-description">Join our newsletter and save 10% off your first order</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" class="email-input" placeholder="Email Address" required>
+                    <button type="submit" class="join-button">JOIN</button>
+                </form>
+                
+                <div class="social-media-section">
+                    <p class="social-title">Follow us on social media</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="lni lni-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="lni lni-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="lni lni-tiktok"></i></a>
+                        <a href="#" class="social-icon"><i class="lni lni-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-copyright">
+        <div class="copyright-content">
+            <p class="copyright-text">© 2024 GreenNest. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/checkout.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Kiểm tra xem có dữ liệu giỏ hàng không
+    const cart = JSON.parse(localStorage.getItem('cart'));
+    if (!cart || cart.length === 0) {
+        alert('Giỏ hàng trống! Quay trở lại trang sản phẩm.');
+        window.location.href = 'Product_list.html';
+    }
+    
+    // Hiển thị thông tin giỏ hàng ở đây...
+});
+</script>
+</body>
+</html>

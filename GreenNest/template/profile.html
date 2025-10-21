@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | GreenNest</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../static/css/HomePage.css">
+    <link rel="stylesheet" href="../static/css/profile.css">
+    <link rel="stylesheet" href="../static/css/neo-brutalism-global.css">
+</head>
+<body>
+    <!-- Header (reusing from HomePage) -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="HomePage.html" class="logo">
+                <div class="logo-icon">🌿</div>
+                <span class="logo-text">Green<span>Nest</span></span>
+            </a>
+
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="HomePage.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Product_list.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-tools">
+                <div class="header-search">
+                    <form action="#" class="search-form">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <a href="#" class="icon-btn" aria-label="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="badge">2</span>
+                </a>
+
+                <div class="cart-wrapper">
+                    <a href="#" class="icon-btn" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge">3</span>
+                    </a>
+                </div>
+
+                <a href="#" class="icon-btn active" aria-label="Account">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="profile-main">
+        <div class="profile-container">
+            <!-- Profile Sidebar -->
+            <div class="profile-sidebar">
+                <div class="user-brief">
+                    <div class="user-avatar-container">
+                        <img src="../static/image/download.jpg" alt="User Avatar" class="user-avatar">
+                        <button class="change-avatar-btn" id="changeAvatarBtn">
+                            <i class="fas fa-camera"></i> Change
+                        </button>
+                    </div>
+                    <h3 class="user-name">Sarah Johnson</h3>
+                    <p class="user-email">sarah.j@example.com</p>
+                </div>
+
+                <div class="profile-navigation">
+                    <a href="#" class="nav-item active" data-section="my-profile">
+                        <i class="fas fa-user-circle"></i> My Profile
+                    </a>
+                    <a href="#" class="nav-item" data-section="orders">
+                        <i class="fas fa-shopping-bag"></i> Order History
+                    </a>
+                    <a href="#" class="nav-item" data-section="addresses">
+                        <i class="fas fa-map-marker-alt"></i> Addresses
+                    </a>
+                    <a href="#" class="nav-item" data-section="payment">
+                        <i class="fas fa-credit-card"></i> Payment Methods
+                    </a>
+                    <a href="#" class="nav-item" data-section="preferences">
+                        <i class="fas fa-cog"></i> Preferences
+                    </a>
+                    <a href="login.html" class="nav-item logout">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+
+                <div class="theme-toggle-container">
+                    <span class="theme-label">
+                        <i class="fas fa-sun"></i>
+                    </span>
+                    <label class="theme-toggle">
+                        <input type="checkbox" id="themeToggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                    <span class="theme-label">
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <!-- Profile Content -->
+            <div class="profile-content">
+                <!-- My Profile Section -->
+                <section class="content-section active" id="my-profile">
+                    <div class="section-header">
+                        <h2>My Profile</h2>
+                        <button class="edit-btn" id="editProfileBtn">
+                            <i class="fas fa-edit"></i> Edit Profile
+                        </button>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="info-card">
+                            <div class="info-row">
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value">Sarah Johnson</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">sarah.j@example.com</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+1 (555) 123-4567</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Date of Birth</span>
+                                <span class="info-value">April 15, 1990</span>
+                            </div>
+                        </div>
+
+                        <div class="account-security">
+                            <h3>Account Security</h3>
+                            <div class="security-option">
+                                <div class="security-info">
+                                    <span class="security-label">Password</span>
+                                    <span class="security-value">••••••••</span>
+                                </div>
+                                <button class="change-btn" id="changePasswordBtn">Change</button>
+                            </div>
+                            <div class="security-option">
+                                <div class="security-info">
+                                    <span class="security-label">Two-Factor Authentication</span>
+                                    <span class="security-value">Disabled</span>
+                                </div>
+                                <button class="enable-btn">Enable</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Order History Section -->
+                <section class="content-section" id="orders">
+                    <div class="section-header">
+                        <h2>Order History</h2>
+                    </div>
+                    
+                    <div class="order-list">
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div class="order-id">Order #GN-8752</div>
+                                <div class="order-date">October 15, 2023</div>
+                                <div class="order-status delivered">Delivered</div>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="../static/images/products/product-1.jpg" alt="Product" class="item-image">
+                                    <div class="item-details">
+                                        <h4>Mediterranean Quinoa Bowl</h4>
+                                        <p>Quantity: 2</p>
+                                    </div>
+                                    <div class="item-price">$23.98</div>
+                                </div>
+                                <div class="order-item">
+                                    <img src="../static/images/products/product-2.jpg" alt="Product" class="item-image">
+                                    <div class="item-details">
+                                        <h4>Spanish Garbanzo Beans</h4>
+                                        <p>Quantity: 1</p>
+                                    </div>
+                                    <div class="item-price">$12.99</div>
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <div class="order-total">
+                                    <span>Total:</span>
+                                    <span class="total-price">$36.97</span>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn-reorder">Reorder</button>
+                                    <button class="btn-details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-card">
+                            <div class="order-header">
+                                <div class="order-id">Order #GN-8531</div>
+                                <div class="order-date">September 28, 2023</div>
+                                <div class="order-status delivered">Delivered</div>
+                            </div>
+                            <div class="order-items">
+                                <div class="order-item">
+                                    <img src="../static/images/products/product-3.jpg" alt="Product" class="item-image">
+                                    <div class="item-details">
+                                        <h4>Creamy Mushroom Risotto</h4>
+                                        <p>Quantity: 1</p>
+                                    </div>
+                                    <div class="item-price">$13.99</div>
+                                </div>
+                            </div>
+                            <div class="order-footer">
+                                <div class="order-total">
+                                    <span>Total:</span>
+                                    <span class="total-price">$13.99</span>
+                                </div>
+                                <div class="order-actions">
+                                    <button class="btn-reorder">Reorder</button>
+                                    <button class="btn-details">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Addresses Section -->
+                <section class="content-section" id="addresses">
+                    <div class="section-header">
+                        <h2>My Addresses</h2>
+                        <button class="add-btn" id="addAddressBtn">
+                            <i class="fas fa-plus"></i> Add Address
+                        </button>
+                    </div>
+                    
+                    <div class="address-list">
+                        <div class="address-card">
+                            <div class="address-badge default">Default</div>
+                            <h4>Home</h4>
+                            <p>Sarah Johnson<br>
+                            123 Green Street<br>
+                            Apt 4B<br>
+                            Portland, OR 97201<br>
+                            United States<br>
+                            Phone: +1 (555) 123-4567</p>
+                            <div class="address-actions">
+                                <button class="btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                            </div>
+                        </div>
+                        
+                        <div class="address-card">
+                            <h4>Work</h4>
+                            <p>Sarah Johnson<br>
+                            456 Office Tower<br>
+                            Suite 700<br>
+                            Portland, OR 97204<br>
+                            United States<br>
+                            Phone: +1 (555) 987-6543</p>
+                            <div class="address-actions">
+                                <button class="btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                                <button class="btn-default">Set as Default</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Payment Methods Section -->
+                <section class="content-section" id="payment">
+                    <div class="section-header">
+                        <h2>Payment Methods</h2>
+                        <button class="add-btn" id="addPaymentBtn">
+                            <i class="fas fa-plus"></i> Add Payment
+                        </button>
+                    </div>
+                    
+                    <div class="payment-list">
+                        <div class="payment-card">
+                            <div class="payment-badge default">Default</div>
+                            <div class="payment-icon">
+                                <i class="fab fa-cc-visa"></i>
+                            </div>
+                            <div class="payment-details">
+                                <h4>Visa ending in 4242</h4>
+                                <p>Expires: 05/2025</p>
+                            </div>
+                            <div class="payment-actions">
+                                <button class="btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-card">
+                            <div class="payment-icon">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </div>
+                            <div class="payment-details">
+                                <h4>Mastercard ending in 8765</h4>
+                                <p>Expires: 12/2024</p>
+                            </div>
+                            <div class="payment-actions">
+                                <button class="btn-edit"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                                <button class="btn-default">Set as Default</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Preferences Section -->
+                <section class="content-section" id="preferences">
+                    <div class="section-header">
+                        <h2>Preferences</h2>
+                    </div>
+                    
+                    <div class="preferences-list">
+                        <div class="preference-card">
+                            <h3>Communication Preferences</h3>
+                            
+                            <div class="preference-option">
+                                <div class="preference-info">
+                                    <h4>Email Notifications</h4>
+                                    <p>Receive updates about your orders and account</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="preference-option">
+                                <div class="preference-info">
+                                    <h4>Marketing Emails</h4>
+                                    <p>Receive promotions, discounts, and newsletter</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" checked>
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="preference-option">
+                                <div class="preference-info">
+                                    <h4>SMS Notifications</h4>
+                                    <p>Receive text messages about order updates</p>
+                                </div>
+                                <label class="toggle-switch">
+                                    <input type="checkbox">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="preference-card">
+                            <h3>Dietary Preferences</h3>
+                            
+                            <div class="diet-preferences">
+                                <label class="diet-option">
+                                    <input type="checkbox" checked>
+                                    <span class="diet-name">Vegetarian</span>
+                                </label>
+                                <label class="diet-option">
+                                    <input type="checkbox">
+                                    <span class="diet-name">Vegan</span>
+                                </label>
+                                <label class="diet-option">
+                                    <input type="checkbox">
+                                    <span class="diet-name">Gluten-Free</span>
+                                </label>
+                                <label class="diet-option">
+                                    <input type="checkbox" checked>
+                                    <span class="diet-name">Low-Carb</span>
+                                </label>
+                                <label class="diet-option">
+                                    <input type="checkbox">
+                                    <span class="diet-name">Dairy-Free</span>
+                                </label>
+                                <label class="diet-option">
+                                    <input type="checkbox">
+                                    <span class="diet-name">Nut-Free</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals/Popups -->
+    <!-- Edit Profile Modal -->
+    <div class="modal" id="editProfileModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Profile</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="editProfileForm">
+                    <div class="form-group">
+                        <label for="editName">Full Name</label>
+                        <input type="text" id="editName" value="Sarah Johnson" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" id="editEmail" value="sarah.j@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editPhone">Phone</label>
+                        <input type="tel" id="editPhone" value="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="editDob">Date of Birth</label>
+                        <input type="date" id="editDob" value="1990-04-15">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Avatar Modal -->
+    <div class="modal" id="changeAvatarModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Change Profile Picture</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="avatar-preview-container">
+                    <img src="../static/images/avatars/default-avatar.jpg" alt="Avatar Preview" id="avatarPreview">
+                </div>
+                <div class="upload-controls">
+                    <input type="file" id="avatarUpload" accept="image/*" hidden>
+                    <label for="avatarUpload" class="upload-btn">Select Image</label>
+                    <p class="upload-hint">Maximum file size: 5MB. Supported formats: JPG, PNG</p>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="cancel-btn">Cancel</button>
+                    <button type="button" class="save-btn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Change Password Modal -->
+    <div class="modal" id="changePasswordModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Change Password</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="changePasswordForm">
+                    <div class="form-group">
+                        <label for="currentPassword">Current Password</label>
+                        <input type="password" id="currentPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">New Password</label>
+                        <input type="password" id="newPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm New Password</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Update Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Detail Modal -->
+    <div class="modal" id="orderDetailModal">
+        <div class="modal-content order-detail-modal">
+            <div class="modal-header">
+                <h2>Order #GN-8752</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Order Detail Tabs -->
+                <div class="order-detail-tabs">
+                    <button class="tab-btn active" data-tab="items">Items</button>
+                    <button class="tab-btn" data-tab="customer">Customer Details</button>
+                    <button class="tab-btn" data-tab="activities">Activities</button>
+                    <button class="tab-btn" data-tab="notes">Order Notes</button>
+                </div>
+                
+                <!-- Tab Contents -->
+                <div class="order-detail-content">
+                    <!-- Items Tab -->
+                    <div class="tab-panel active" id="items-panel">
+                        <div class="order-items-detail">
+                            <div class="order-item detail-item">
+                                <img src="../static/image/download.jpg" alt="Product" class="item-image">
+                                <div class="item-details">
+                                    <h4>Mediterranean Quinoa Bowl</h4>
+                                    <p>Quantity: 2</p>
+                                </div>
+                                <div class="item-price">$23.98</div>
+                            </div>
+                            <div class="order-item detail-item">
+                                <img src="../static/image/download.jpg" alt="Product" class="item-image">
+                                <div class="item-details">
+                                    <h4>Spanish Garbanzo Beans</h4>
+                                    <p>Quantity: 1</p>
+                                </div>
+                                <div class="item-price">$12.99</div>
+                            </div>
+                        </div>
+                        
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span>$36.97</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping</span>
+                                <span>$3.50</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax</span>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span>$40.47</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Customer Details Tab -->
+                    <div class="tab-panel" id="customer-panel">
+                        <div class="customer-details">
+                            <div class="customer-detail-section">
+                                <h3>Customer Information</h3>
+                                <div class="detail-grid">
+                                    <div class="detail-item">
+                                        <span class="detail-label">Name</span>
+                                        <span class="detail-value">Sarah Johnson</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Email</span>
+                                        <span class="detail-value">sarah.j@example.com</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Mobile</span>
+                                        <span class="detail-value">+1 (555) 123-4567</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Payment</span>
+                                        <span class="detail-value">Visa ending in 4242</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="detail-label">Status</span>
+                                        <span class="detail-value status-paid">Paid</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="address-section">
+                                <div class="shipping-address">
+                                    <h3>Shipping Address</h3>
+                                    <p>
+                                        Sarah Johnson<br>
+                                        123 Green Street<br>
+                                        Apt 4B<br>
+                                        Portland, OR 97201<br>
+                                        United States
+                                    </p>
+                                </div>
+                                <div class="billing-address">
+                                    <h3>Billing Address</h3>
+                                    <p>
+                                        Same as shipping address
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Activities Tab -->
+                    <div class="tab-panel" id="activities-panel">
+                        <div class="activities-timeline">
+                            <div class="activity-item">
+                                <div class="activity-icon completed">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Ready to Pickup</h4>
+                                    <p>Order #GN-8752 is ready for pickup</p>
+                                    <span class="activity-time">11:00 AM, Oct 18, 2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-icon completed">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Order Processed</h4>
+                                    <p>Your order has been processed</p>
+                                    <span class="activity-time">10:30 AM, Oct 18, 2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-icon completed">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Payment Confirmed</h4>
+                                    <p>Payment of $40.47 has been confirmed</p>
+                                    <span class="activity-time">10:00 AM, Oct 18, 2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="activity-item">
+                                <div class="activity-icon completed">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="activity-content">
+                                    <h4>Order Placed</h4>
+                                    <p>Your order has been placed successfully</p>
+                                    <span class="activity-time">09:30 AM, Oct 18, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Order Notes Tab -->
+                    <div class="tab-panel" id="notes-panel">
+                        <div class="order-notes">
+                            <div class="note-header">
+                                <h3>Order Notes</h3>
+                            </div>
+                            <div class="note-content">
+                                <p>Ship All The Ordered Items Together By Friday And Send You An Email Please Check. Thanks!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container">
+        <div class="toast success">
+            <div class="toast-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-content">
+                <p>Profile updated successfully!</p>
+            </div>
+            <button class="toast-close">&times;</button>
+        </div>
+    </div>
+
+    <!-- Footer (reusing from HomePage) -->
+    <footer class="newsletter-footer">
+        <!-- Footer content here, similar to HomePage.html -->
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/cart.js"></script>
+</body>
+</html>
