@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediterranean Feast Combo | GreenNest</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../static/css/neo-brutalism-global.css">
+    <link rel="stylesheet" href="../static/css/header_footer.css">
+    <link rel="stylesheet" href="../static/css/product-detail.css">
+    <link rel="stylesheet" href="../static/css/product_card.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="HomePage.html" class="logo">
+                <div class="logo-icon">🌿</div>
+                <span class="logo-text">Green<span>Nest</span></span>
+            </a>
+    
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item active">
+                        <a href="HomePage.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="Product_list.html" class="nav-link">
+                            Products <i class="lni lni-chevron-down"></i> </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-column">
+                                    <h4>🥬 Fresh Produce</h4>
+                                    <ul>
+                                        <li><a href="#">Organic Vegetables</a></li>
+                                        <li><a href="#">Fresh Fruits</a></li>
+                                        <li><a href="#">Salad Greens</a></li>
+                                        <li><a href="#">Herbs & Spices</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>🥛 Dairy & Eggs</h4>
+                                    <ul>
+                                        <li><a href="#">Organic Milk</a></li>
+                                        <li><a href="#">Cheese Selection</a></li>
+                                        <li><a href="#">Fresh Yogurt</a></li>
+                                        <li><a href="#">Free-Range Eggs</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4>🍞 Bakery & Grains</h4>
+                                    <ul>
+                                        <li><a href="#">Artisan Bread</a></li>
+                                        <li><a href="#">Organic Rice</a></li>
+                                        <li><a href="#">Pasta & Noodles</a></li>
+                                        <li><a href="#">Breakfast Cereals</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link promotion">🔥 Promotions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Our Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="header-tools">
+                <div class="header-search">
+                    <form action="/search" method="GET" class="search-form">
+                        <input type="text" name="q" placeholder="Search..." class="search-input">
+                        <button type="submit" class="search-btn" aria-label="Submit search">
+                            <i class="lni lni-search-alt"></i> </button>
+                    </form>
+                </div>
+    
+                <div class="wishlist-wrapper">
+                    <a href="#" class="icon-btn" aria-label="Wishlist">
+                        <i class="lni lni-heart"></i> <span class="badge">3</span>
+                    </a>
+                    <div class="wishlist-dropdown">
+                        <h4>Wishlist</h4>
+                        <div class="wishlist-items">
+                            <p class="empty-wishlist-msg">Your wishlist is empty</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-wrapper">
+                    <a href="#" class="icon-btn" aria-label="Shopping Cart">
+                        <i class="lni lni-cart"></i> <span class="badge">2</span>
+                    </a>
+                    <div class="cart-dropdown">
+                        <h4>Shopping Cart</h4>
+                        <div class="cart-items">
+                            <p class="empty-cart-msg">Your cart is empty</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-wrapper">
+                    <a href="#" class="icon-btn" aria-label="Account">
+                        <i class="lni lni-user"></i>
+                    </a>
+                    <div class="user-dropdown">
+                        <h4>My Account</h4>
+                        <ul class="user-menu">
+                            <li><a href="profile.html"><i class="lni lni-user"></i> My Profile</a></li>
+                            <li><a href="#"><i class="lni lni-exit"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > 
+                <a href="combos.html">Combo Deals</a> > 
+                <span>Mediterranean Feast Combo</span>
+            </div>
+        </div>
+
+        <!-- Product Detail Container (tương tự product-detail nhưng điều chỉnh cho combo) -->
+        <div class="product-detail-container">
+            <!-- Product Images -->
+            <div class="product-images">
+                <img src="../static/image/combo-mediterranean.jpg" alt="Mediterranean Feast Combo" class="main-image">
+                <div class="thumbnail-container">
+                    <img src="../static/image/combo-mediterranean.jpg" alt="Combo overview" class="thumbnail active">
+                    <img src="../static/image/combo-detail-1.jpg" alt="Salad included" class="thumbnail">
+                    <img src="../static/image/combo-detail-2.jpg" alt="Pasta included" class="thumbnail">
+                    <img src="../static/image/combo-detail-3.jpg" alt="Soup included" class="thumbnail">
+                </div>
+            </div>
+
+            <!-- Product Info (điều chỉnh cho combo: thêm giá giảm, số items) -->
+            <div class="product-info">
+                <!-- Badges -->
+                <div class="product-badges">
+                    <span class="product-badge badge-new">🔥 COMBO DEAL</span>
+                    <span class="product-badge badge-organic">Save 25%</span>
+                </div>
+
+                <!-- Title -->
+                <h1 class="product-title">Mediterranean Feast Combo</h1>
+
+                <!-- Meta Info -->
+                <div class="product-meta">
+                    <span><i class="fas fa-box"></i> 4 Items</span>
+                    <span><i class="far fa-clock"></i> Serves 4-6</span>
+                    <span><i class="fas fa-leaf"></i> 100% Organic</span>
+                </div>
+
+                <!-- COMBO PRICE BLOCK (sử dụng class price-section từ product-detail.css, điều chỉnh inline nếu cần) -->
+                <div class="price-section">
+                    <span class="current-price">$39.99</span>
+                    <span class="original-price">$52.99</span>
+                    <span class="discount-badge">SAVE $13</span>
+                </div>
+
+                <!-- Description -->
+                <p class="product-description">
+                    Experience the vibrant flavors of the Mediterranean with our specially curated combo! 
+                    This feast includes 4 delicious ready-to-cook meals featuring fresh ingredients, 
+                    aromatic herbs, and authentic recipes. Perfect for family dinners or meal prep for the week. 
+                    <strong>Save $13 when you buy this combo!</strong>
+                </p>
+
+                <!-- What's Included Highlight Box (sử dụng nutrition-highlights class từ product-detail.css) -->
+                <div class="nutrition-highlights">
+                    <h3>✨ What's Included in This Combo</h3>
+                    <div class="nutrition-icons">
+                        <div class="nutrition-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Spanish Garbanzo Beans</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Mediterranean Quinoa Bowl</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Greek Lemon Chicken</span>
+                        </div>
+                        <div class="nutrition-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Italian Pasta Primavera</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Actions -->
+                <div class="product-actions">
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantity:</label>
+                        <button class="qty-btn minus-btn"><i class="fas fa-minus"></i></button>
+                        <input type="number" id="quantity" value="1" min="1" max="10">
+                        <button class="qty-btn plus-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add Combo to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMBO INCLUDES SECTION (sử dụng related-products class từ product-detail.css để hiển thị grid sản phẩm) -->
+        <div class="related-products" style="margin-top: 60px;">
+            <h2 class="related-title">What's Inside This Combo</h2>
+            <div class="related-grid">
+                <!-- Item 1 (sử dụng product-card class từ product_card.css) -->
+                <a href="product-detail.html" class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/download.jpg" alt="Spanish Garbanzo Beans" class="product-img">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Spanish Garbanzo Beans</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">35 min</span>
+                            <span class="nutrient">640 cal</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">$12.99</span>
+                            <span class="btn-price">(Included)</span>
+                        </button>
+                    </div>
+                </a>
+
+                <!-- Item 2 -->
+                <a href="#" class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/quinoa-bowl.jpg" alt="Mediterranean Quinoa Bowl" class="product-img">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Mediterranean Quinoa Bowl</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">30 min</span>
+                            <span class="nutrient">580 cal</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">$11.99</span>
+                            <span class="btn-price">(Included)</span>
+                        </button>
+                    </div>
+                </a>
+
+                <!-- Item 3 -->
+                <a href="#" class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/greek-chicken.jpg" alt="Greek Lemon Chicken" class="product-img">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Greek Lemon Chicken</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">40 min</span>
+                            <span class="nutrient">720 cal</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">$14.99</span>
+                            <span class="btn-price">(Included)</span>
+                        </button>
+                    </div>
+                </a>
+
+                <!-- Item 4 -->
+                <a href="#" class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/pasta-primavera.jpg" alt="Italian Pasta Primavera" class="product-img">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Italian Pasta Primavera</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">25 min</span>
+                            <span class="nutrient">550 cal</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">$13.00</span>
+                            <span class="btn-price">(Included)</span>
+                        </button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tabs (tương tự product-detail, điều chỉnh nội dung cho combo) -->
+        <div class="product-details">
+            <div class="tabs">
+                <div class="tab active" data-tab="overview">Combo Overview</div>
+                <div class="tab" data-tab="nutrition">Total Nutrition</div>
+                <div class="tab" data-tab="benefits">Why This Combo</div>
+            </div>
+
+            <!-- Overview Tab -->
+            <div class="tab-content active" id="overview">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <h3>Complete Mediterranean Experience</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(10,10,10,0.8);">
+                        Our Mediterranean Feast Combo brings together four of our most popular dishes, 
+                        carefully selected to offer variety, nutrition, and authentic flavors. Each meal 
+                        features fresh, organic ingredients and easy-to-follow cooking instructions.
+                    </p>
+                    
+                    <h4 style="margin-top: 32px; margin-bottom: 16px;">Perfect For:</h4>
+                    <ul style="font-size: 1rem; line-height: 2; padding-left: 24px;">
+                        <li>Family dinners (serves 4-6 people)</li>
+                        <li>Meal prep for the week</li>
+                        <li>Special occasions</li>
+                        <li>Trying new Mediterranean recipes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nutrition Tab -->
+            <div class="tab-content" id="nutrition">
+                <div class="nutrition-facts">
+                    <h3>Total Combo Nutrition</h3>
+                    <p class="serving">Average per serving (1 meal)</p>
+                    <div class="nutrition-table">
+                        <div class="nutrition-row">
+                            <span>Average Calories</span>
+                            <span><strong>622 cal</strong></span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Total Protein</span>
+                            <span><strong>28g</strong></span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Total Fiber</span>
+                            <span><strong>14g</strong></span>
+                        </div>
+                        <div class="nutrition-row">
+                            <span>Healthy Fats</span>
+                            <span><strong>22g</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefits Tab -->
+            <div class="tab-content" id="benefits">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="step" style="border: 3px solid var(--primary-color); background: #E8F5E9;">
+                        <div class="step-number" style="background: var(--primary-color);">💰</div>
+                        <div class="step-content">
+                            <h3>Save $13 (25% Off)</h3>
+                            <p>Buying this combo saves you $13 compared to purchasing items individually. 
+                            That's 25% off the regular price!</p>
+                        </div>
+                    </div>
+
+                    <div class="step" style="border: 3px solid var(--accent-yellow); background: #FFFACD;">
+                        <div class="step-number" style="background: var(--accent-yellow); color: var(--black);">🍽️</div>
+                        <div class="step-content">
+                            <h3>Variety & Convenience</h3>
+                            <p>Get 4 different meals in one purchase. Perfect for trying new recipes 
+                            without committing to full portions.</p>
+                        </div>
+                    </div>
+
+                    <div class="step" style="border: 3px solid var(--secondary-color); background: #FFE5DB;">
+                        <div class="step-number" style="background: var(--secondary-color);">🌿</div>
+                        <div class="step-content">
+                            <h3>100% Organic Ingredients</h3>
+                            <p>All meals feature certified organic produce, sustainable sourcing, 
+                            and no artificial preservatives.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Combos (sử dụng related-products class từ product-detail.css) -->
+        <div class="related-products">
+            <h2 class="related-title">Other Popular Combos</h2>
+            <div class="related-grid">
+                <!-- Combo Card (sử dụng product-card class) -->
+                <div class="product-card">
+                    <div class="card-image">
+                        <span class="badge-tag seasonal">COMBO</span>
+                        <span class="badge-corner">SAVE $15</span>
+                        <img src="../static/image/asian-combo.jpg" alt="Asian Fusion Combo" class="product-img">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Asian Fusion Combo</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">4 Items</span>
+                            <span class="nutrient">Serves 4-6</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">$42.99</span>
+                            <span class="btn-price"><del>$57.99</del></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Thêm các combo card khác tương tự -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="newsletter-footer">
+        <div class="footer-container">
+            <div class="footer-links-side">
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Our Product</h4>
+                    <ul>
+                        <li><a href="#">Meal Kits</a></li>
+                        <li><a href="#">Ready To Eat</a></li>
+                        <li><a href="#">Grocery</a></li>
+                        <li><a href="#">Frozen Meals</a></li>
+                        <li><a href="#">Why Plants</a></li>
+                        <li><a href="#">All Recipes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Help</h4>
+                    <ul>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Recycle</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-links-title">Connect</h4>
+                    <ul>
+                        <li><a href="#">Refer and Earn</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-content-side">
+                <h2 class="footer-title">Get to Know Us Better</h2>
+                <p class="footer-description">Join our newsletter and save 10% off your first order</p>
+                
+                <form class="newsletter-form">
+                    <input type="email" class="email-input" placeholder="Email Address" required>
+                    <button type="submit" class="join-button">JOIN</button>
+                </form>
+                
+                <p class="error-message" style="display: none;">Please enter your email address.</p>
+                
+                <div class="social-media-section">
+                    <p class="social-title">Follow us on social media</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="lni lni-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="lni lni-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="TikTok">
+                            <i class="lni lni-tiktok"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube">
+                            <i class="lni lni-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-copyright">
+        <div class="copyright-content">
+            <p class="copyright-text">© 2024 GreenNest. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript (tương tự product-detail.js) -->
+    <script>
+        // Tab switching
+        document.querySelectorAll('.tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                this.classList.add('active');
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Thumbnail switching
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                document.querySelector('.main-image').src = this.src;
+            });
+        });
+        
+        // Quantity selector
+        const quantityInput = document.getElementById('quantity');
+        document.querySelector('.minus-btn').addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            if (value > 1) quantityInput.value = value - 1;
+        });
+        
+        document.querySelector('.plus-btn').addEventListener('click', () => {
+            let value = parseInt(quantityInput.value);
+            if (value < 10) quantityInput.value = value + 1;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenNest - Organic & Fresh Food Store</title>
+    <link rel="stylesheet" href="../static/css/header_footer.css">
+    <link rel="stylesheet" href="../static/css/HomePage-new.css">
+    <link rel="stylesheet" href="../static/css/product_card.css">
+    <link rel="stylesheet" href="../static/css/neo-brutalism-global.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">🌿</div>
+            <span class="logo-text">Green<span>Nest</span></span>
+        </a>
+
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item has-dropdown">
+                    <a href="Product_list.html" class="nav-link">
+                        Products <i class="lni lni-chevron-down"></i> </a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-grid">
+                            <div class="mega-menu-column">
+                                <h4>🥬 Fresh Produce</h4>
+                                <ul>
+                                    <li><a href="#">Organic Vegetables</a></li>
+                                    <li><a href="#">Fresh Fruits</a></li>
+                                    <li><a href="#">Salad Greens</a></li>
+                                    <li><a href="#">Herbs & Spices</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>🥛 Dairy & Eggs</h4>
+                                <ul>
+                                    <li><a href="#">Organic Milk</a></li>
+                                    <li><a href="#">Cheese Selection</a></li>
+                                    <li><a href="#">Fresh Yogurt</a></li>
+                                    <li><a href="#">Free-Range Eggs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-menu-column">
+                                <h4>🍞 Bakery & Grains</h4>
+                                <ul>
+                                    <li><a href="#">Artisan Bread</a></li>
+                                    <li><a href="#">Organic Rice</a></li>
+                                    <li><a href="#">Pasta & Noodles</a></li>
+                                    <li><a href="#">Breakfast Cereals</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link promotion">🔥 Promotions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Our Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-tools">
+            <div class="header-search">
+                <form action="/search" method="GET" class="search-form">
+                    <input type="text" name="q" placeholder="Search..." class="search-input">
+                    <button type="submit" class="search-btn" aria-label="Submit search">
+                        <i class="lni lni-search-alt"></i> </button>
+                </form>
+            </div>
+
+            <div class="wishlist-wrapper">
+                <a href="#" class="icon-btn" aria-label="Wishlist">
+                    <i class="lni lni-heart"></i> <span class="badge">3</span>
+                </a>
+                <div class="wishlist-dropdown">
+                    <h4>Wishlist</h4>
+                    <div class="wishlist-items">
+                        <p class="empty-wishlist-msg">Your wishlist is empty</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-wrapper">
+                <a href="#" class="icon-btn" aria-label="Shopping Cart">
+                    <i class="lni lni-cart"></i> <span class="badge">2</span>
+                </a>
+                <div class="cart-dropdown">
+                    <h4>Shopping Cart</h4>
+                    <div class="cart-items">
+                        <p class="empty-cart-msg">Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+             <div class="user-wrapper">
+                <a href="#" class="icon-btn" aria-label="Account">
+                    <i class="lni lni-user"></i>
+                </a>
+                <div class="user-dropdown">
+                    <h4>My Account</h4>
+                    <ul class="user-menu">
+                        <li><a href="profile.html"><i class="lni lni-user"></i> My Profile</a></li>
+                        <li><a href="#"><i class="lni lni-exit"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION - Redesigned
+         ========================================== -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🌱</span>
+                    <span class="badge-text">100% Organic & Fresh</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Eat Better,<br>
+                    <span class="hero-title-highlight">Live Healthier</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Farm-fresh organic meals delivered to your door. No prep, no mess, just pure nutrition.
+                </p>
+                
+                <div class="hero-cta-group">
+                    <a href="Product_list.html" class="btn-hero-primary">
+                        <span>Shop Now</span>
+                        <i class="lni lni-arrow-right"></i>
+                    </a>
+                    <a href="#meal-planner" class="btn-hero-secondary">
+                        <span>Plan Your Meals</span>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50K+</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Organic</div>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Delivery</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-image-card">
+                    <img src="../static/image/download.jpg" alt="Fresh Organic Salad Bowl" class="hero-main-image">
+                    <div class="floating-badge badge-1">
+                        <span class="emoji">🥗</span>
+                        <span class="text">Fresh Daily</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <span class="emoji">✨</span>
+                        <span class="text">Chef-Crafted</span>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <span class="emoji">🚚</span>
+                        <span class="text">Free Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         VALUE PROPOSITIONS - Why Choose Us
+         ========================================== -->
+    <section class="value-props-section">
+        <div class="container">
+            <div class="value-props-grid">
+                <div class="value-prop-card">
+                    <div class="prop-icon">🌿</div>
+                    <h3 class="prop-title">100% Organic</h3>
+                    <p class="prop-text">Certified organic ingredients from local farms</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="prop-icon">👨‍🍳</div>
+                    <h3 class="prop-title">Chef-Crafted</h3>
+                    <p class="prop-text">Expertly prepared by professional chefs</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="prop-icon">🚚</div>
+                    <h3 class="prop-title">Fast Delivery</h3>
+                    <p class="prop-text">Fresh meals delivered within 24 hours</p>
+                </div>
+                <div class="value-prop-card">
+                    <div class="prop-icon">💚</div>
+                    <h3 class="prop-title">Eco-Friendly</h3>
+                    <p class="prop-text">Sustainable packaging, zero waste</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==========================================
+         FEATURED PRODUCTS - Best Sellers
+         ========================================== -->
+    <section class="featured-products-section">
+        <div class="container">
+            <div class="section-header-center">
+                <h2 class="section-title">This Week's Favorites</h2>
+                <p class="section-subtitle">Handpicked meals that our customers love</p>
+            </div>
+
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All</button>
+                <button class="category-tab" data-category="salads">Salads</button>
+                <button class="category-tab" data-category="bowls">Bowls</button>
+                <button class="category-tab" data-category="soups">Soups</button>
+            </div>
+
+            <div class="products-grid">
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/download.jpg" alt="Mediterranean Quinoa Bowl" class="product-img">
+                        <span class="badge-tag bestseller">Bestseller</span>
+                        <span class="badge-corner">-20%</span>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Mediterranean Quinoa Bowl</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">420 cal</span>
+                            <span class="nutrient">25g protein</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">Add</span>
+                            <span class="btn-price">$12.99</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/download.jpg" alt="Asian Chicken Salad" class="product-img">
+                        <span class="badge-tag seasonal">New</span>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Asian Chicken Salad</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">380 cal</span>
+                            <span class="nutrient">30g protein</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">Add</span>
+                            <span class="btn-price">$13.99</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/download.jpg" alt="Green Goddess Bowl" class="product-img">
+                        <span class="badge-tag protein">High Protein</span>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Green Goddess Bowl</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">350 cal</span>
+                            <span class="nutrient">22g protein</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">Add</span>
+                            <span class="btn-price">$11.99</span>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="card-image">
+                        <img src="../static/image/download.jpg" alt="Spicy Thai Soup" class="product-img">
+                        <span class="badge-tag seasonal">Seasonal</span>
+                        <span class="badge-corner">🔥 Hot</span>
+                        <button class="quick-view-btn">Quick View</button>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="product-name">Spicy Thai Soup</h3>
+                        <div class="product-nutrients">
+                            <span class="nutrient">280 cal</span>
+                            <span class="nutrient">18g protein</span>
+                        </div>
+                        <button class="btn-add-cart">
+                            <span class="btn-text">Add</span>
+                            <span class="btn-price">$10.99</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-cta">
+                <a href="Product_list.html" class="btn-view-all">
+                    <span>View All Products</span>
+                    <i class="lni lni-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==========================================
+         VOUCHER SECTION - Discount Codes
+         ========================================== -->
+    <section class="voucher-section">
+        <div class="container">
+            <div class="section-header-center">
+                <h2 class="section-title">Exclusive Deals & Offers</h2>
+                <p class="section-subtitle">Save big with our special discount codes</p>
+            </div>
+
+            <div class="vouchers-grid">
+                <!-- Voucher 1 -->
+                <div class="voucher-card">
+                    <div class="voucher-header">
+                        <div class="voucher-icon">🎉</div>
+                        <div class="voucher-info">
+                            <h3 class="voucher-title">New Customer Welcome</h3>
+                            <p class="voucher-desc">For your first order</p>
+                        </div>
+                    </div>
+                    <div class="voucher-body">
+                        <div class="discount-amount">20% OFF</div>
+                        <div class="voucher-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Min. spend $50</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Valid until Dec 31</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voucher-footer">
+                        <div class="voucher-code-wrapper">
+                            <span class="code-label">Code:</span>
+                            <span class="voucher-code" data-code="WELCOME20">WELCOME20</span>
+                        </div>
+                        <button class="btn-copy-code" data-code="WELCOME20">
+                            <i class="lni lni-files"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Voucher 2 -->
+                <div class="voucher-card featured">
+                    <div class="voucher-header">
+                        <div class="voucher-icon">🔥</div>
+                        <div class="voucher-info">
+                            <h3 class="voucher-title">Flash Sale</h3>
+                            <p class="voucher-desc">Limited time offer</p>
+                        </div>
+                    </div>
+                    <div class="voucher-body">
+                        <div class="discount-amount">30% OFF</div>
+                        <div class="voucher-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Min. spend $100</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📦</span>
+                                <span class="detail-text">Max $50 discount</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voucher-footer">
+                        <div class="voucher-code-wrapper">
+                            <span class="code-label">Code:</span>
+                            <span class="voucher-code" data-code="FLASH30">FLASH30</span>
+                        </div>
+                        <button class="btn-copy-code" data-code="FLASH30">
+                            <i class="lni lni-files"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Voucher 3 -->
+                <div class="voucher-card">
+                    <div class="voucher-header">
+                        <div class="voucher-icon">🚚</div>
+                        <div class="voucher-info">
+                            <h3 class="voucher-title">Free Shipping</h3>
+                            <p class="voucher-desc">All orders nationwide</p>
+                        </div>
+                    </div>
+                    <div class="voucher-body">
+                        <div class="discount-amount">FREE SHIP</div>
+                        <div class="voucher-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Min. spend $30</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Valid all month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voucher-footer">
+                        <div class="voucher-code-wrapper">
+                            <span class="code-label">Code:</span>
+                            <span class="voucher-code" data-code="FREESHIP">FREESHIP</span>
+                        </div>
+                        <button class="btn-copy-code" data-code="FREESHIP">
+                            <i class="lni lni-files"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Voucher 4 -->
+                <div class="voucher-card">
+                    <div class="voucher-header">
+                        <div class="voucher-icon">💎</div>
+                        <div class="voucher-info">
+                            <h3 class="voucher-title">VIP Members Only</h3>
+                            <p class="voucher-desc">Exclusive discount</p>
+                        </div>
+                    </div>
+                    <div class="voucher-body">
+                        <div class="discount-amount">15% OFF</div>
+                        <div class="voucher-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⭐</span>
+                                <span class="detail-text">For VIP members</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">🔄</span>
+                                <span class="detail-text">Reusable code</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="voucher-footer">
+                        <div class="voucher-code-wrapper">
+                            <span class="code-label">Code:</span>
+                            <span class="voucher-code" data-code="VIP15">VIP15</span>
+                        </div>
+                        <button class="btn-copy-code" data-code="VIP15">
+                            <i class="lni lni-files"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ==========================================
+         MEAL PLANNER AUTOMATION - Redesigned
+         ========================================== -->
+    <section class="meal-planner-section" id="meal-planner">
+        <div class="container">
+            <div class="planner-layout">
+                <!-- Left Side: Info & Benefits -->
+                <div class="planner-info">
+                    <div class="info-badge">
+                        <span class="badge-icon">🤖</span>
+                        <span class="badge-text">Smart Meal Planning</span>
+                    </div>
+                    
+                    <h2 class="planner-title">Automate Your Weekly Meals</h2>
+                    <p class="planner-subtitle">Answer a few questions and let us create your perfect meal plan</p>
+                    
+                    <div class="planner-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">⏰</div>
+                            <div class="benefit-content">
+                                <h4>Save Time</h4>
+                                <p>No more meal planning stress</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎯</div>
+                            <div class="benefit-content">
+                                <h4>Personalized</h4>
+                                <p>Tailored to your preferences</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">💰</div>
+                            <div class="benefit-content">
+                                <h4>Save Money</h4>
+                                <p>Reduce food waste by 40%</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="trust-number">10,000+</span>
+                            <span class="trust-label">Active Plans</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-number">4.9★</span>
+                            <span class="trust-label">Average Rating</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Meal Planner Form -->
+                <div class="planner-form-container">
+                    <form class="meal-planner-form" id="mealPlannerForm">
+                        <div class="form-header">
+                            <h3 class="form-title">Create Your Plan</h3>
+                            <p class="form-subtitle">Takes less than 2 minutes</p>
+                        </div>
+                        
+                        <div class="form-step active" data-step="1">
+                            <div class="form-group">
+                                <label class="form-label">How many meals per week?</label>
+                                <div class="meals-selector">
+                                    <button type="button" class="meal-option" data-value="5">
+                                        <span class="option-number">5</span>
+                                        <span class="option-label">Meals</span>
+                                    </button>
+                                    <button type="button" class="meal-option active" data-value="10">
+                                        <span class="option-number">10</span>
+                                        <span class="option-label">Meals</span>
+                                        <span class="option-badge">Popular</span>
+                                    </button>
+                                    <button type="button" class="meal-option" data-value="15">
+                                        <span class="option-number">15</span>
+                                        <span class="option-label">Meals</span>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Dietary preferences</label>
+                                <div class="checkbox-grid">
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="diet" value="vegetarian">
+                                        <span class="checkbox-icon">🥬</span>
+                                        <span class="checkbox-label">Vegetarian</span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="diet" value="vegan">
+                                        <span class="checkbox-icon">🌱</span>
+                                        <span class="checkbox-label">Vegan</span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="diet" value="keto">
+                                        <span class="checkbox-icon">🥑</span>
+                                        <span class="checkbox-label">Keto</span>
+                                    </label>
+                                    <label class="checkbox-card">
+                                        <input type="checkbox" name="diet" value="paleo">
+                                        <span class="checkbox-icon">🥩</span>
+                                        <span class="checkbox-label">Paleo</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-step" data-step="2">
+                            <div class="form-group">
+                                <label class="form-label">What's your goal?</label>
+                                <div class="goal-selector">
+                                    <label class="goal-card">
+                                        <input type="radio" name="goal" value="weight-loss">
+                                        <div class="goal-content">
+                                            <span class="goal-icon">📉</span>
+                                            <span class="goal-title">Weight Loss</span>
+                                            <span class="goal-desc">Calorie-controlled meals</span>
+                                        </div>
+                                    </label>
+                                    <label class="goal-card">
+                                        <input type="radio" name="goal" value="muscle-gain">
+                                        <div class="goal-content">
+                                            <span class="goal-icon">💪</span>
+                                            <span class="goal-title">Muscle Gain</span>
+                                            <span class="goal-desc">High protein options</span>
+                                        </div>
+                                    </label>
+                                    <label class="goal-card">
+                                        <input type="radio" name="goal" value="maintenance">
+                                        <div class="goal-content">
+                                            <span class="goal-icon">⚖️</span>
+                                            <span class="goal-title">Maintenance</span>
+                                            <span class="goal-desc">Balanced nutrition</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-label">Email address</label>
+                                <input type="email" class="form-input" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-navigation">
+                            <button type="button" class="btn-form-prev" style="display: none;">
+                                <i class="lni lni-arrow-left"></i>
+                                <span>Back</span>
+                            </button>
+                            <button type="button" class="btn-form-next">
+                                <span>Continue</span>
+                                <i class="lni lni-arrow-right"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="form-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 50%;"></div>
+                            </div>
+                            <span class="progress-text">Step 1 of 2</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="newsletter-footer">
+    <div class="footer-container">
+        <div class="footer-links-side">
+            <div class="footer-column">
+                <h4 class="footer-links-title">Our Product</h4>
+                <ul>
+                    <li><a href="#">Meal Kits</a></li>
+                    <li><a href="#">Ready To Eat</a></li>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="#">Frozen Meals</a></li>
+                    <li><a href="#">Why Plants</a></li>
+                    <li><a href="#">All Recipes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-links-title">Help</h4>
+                <ul>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Recycle</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-links-title">Connect</h4>
+                <ul>
+                    <li><a href="#">Refer and Earn</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-content-side">
+            <h2 class="footer-title">Get to Know Us Better</h2>
+            <p class="footer-description">Join our newsletter and save 10% off your first order</p>
+            
+            <form class="newsletter-form">
+                <input type="email" class="email-input" placeholder="Email Address" required>
+                <button type="submit" class="join-button">JOIN</button>
+            </form>
+            
+            <p class="error-message" style="display: none;">Please enter your email address.</p>
+            
+            <div class="social-media-section">
+                <p class="social-title">Follow us on social media</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="lni lni-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="lni lni-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="TikTok">
+                        <i class="lni lni-tiktok"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="lni lni-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+
+    <div class="footer-copyright">
+        <div class="copyright-content">
+            <p class="copyright-text">© 2024 GreenNest. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/HomePage-new.js"></script>
+</body>
+</html>
